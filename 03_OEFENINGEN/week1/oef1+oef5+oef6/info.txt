@@ -1,1 +1,2 @@
 oj oj 
+vergeet niet dat dit een node js server is en dus dat deze om te beginnen ge init moet worden , check de node ppt hiervoor ook nog eens of deze zal waarscijnlijk niet werken 

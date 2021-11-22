@@ -1,11 +1,16 @@
-document.getElementById("button").addEventListener("click",function(){
-    console.log(document.getElementById("textNumber").value)
-    if(document.getElementById("textNumber").value %2 == 0){
-        document.getElementById("end").innerHTML = "het getal is even";
-        document.getElementById("end").style.backgroundColor = "green";
+const getal = document.getElementById("textNumber")
+const eind = document.getElementById("end")
+
+
+getal.addEventListener("input",function(e){
+    if(getal.value %2 == 0){
+        eind.innerHTML = "het getal is even";
+        eind.style.backgroundColor = "green";
 
     } else {
-        document.getElementById("end").innerHTML = "het getal is oneven";
-        document.getElementById("end").style.backgroundColor = "red";
+        eind.innerHTML = "het getal is oneven";
+        eind.style.backgroundColor = "red";
     }
+
+    e.preventDefault();
 });
